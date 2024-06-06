@@ -1,4 +1,5 @@
-﻿namespace challenges_and_data_structures
+﻿
+namespace challenges_and_data_structures
 {
     internal class Program
     {
@@ -6,6 +7,8 @@
         {
             
         }
-        public void 
+       
+           
+        
     }
-}
+}   
