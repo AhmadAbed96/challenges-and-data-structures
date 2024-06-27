@@ -1,2 +1,2 @@
 ### Challenge 05: Find Duplicates in Array
-![Find Duplicates in Array](./Challenge-img/Whiteboard-findduplicates.png )
+![Find Duplicates in Array](./Whiteboard-findduplicates.png)
