@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonElements", "CommonElements\CommonElements.csproj", "{AF3713D6-1F1A-43A6-80AB-7F7F1C876DF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonElements", "CommonElements\CommonElements.csproj", "{AF3713D6-1F1A-43A6-80AB-7F7F1C876DF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonElementsTest", "CommonElementsTest\CommonElementsTest.csproj", "{7C4C2943-754C-46D9-B3C2-F83DB7363173}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonElementsTest", "CommonElementsTest\CommonElementsTest.csproj", "{7C4C2943-754C-46D9-B3C2-F83DB7363173}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverse-Words", "..\Reverse-Words\Reverse-Words\Reverse-Words.csproj", "{926C7913-116F-4154-B1C6-D5EE715D69EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7C4C2943-754C-46D9-B3C2-F83DB7363173}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C4C2943-754C-46D9-B3C2-F83DB7363173}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C4C2943-754C-46D9-B3C2-F83DB7363173}.Release|Any CPU.Build.0 = Release|Any CPU
+		{926C7913-116F-4154-B1C6-D5EE715D69EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{926C7913-116F-4154-B1C6-D5EE715D69EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{926C7913-116F-4154-B1C6-D5EE715D69EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{926C7913-116F-4154-B1C6-D5EE715D69EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
