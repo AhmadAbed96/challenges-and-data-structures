@@ -18,5 +18,6 @@ The LinkedList class should support methods to:
 
 
 ### Challenge Linked List Remove Duplicates
-[Remove Duplicates](./LinkedList/LinkedList/Remove_Duplicat/README.md)
+
+[Remove Duplicates](./LinkedList/Remove_Duplicat/README.md)
 
