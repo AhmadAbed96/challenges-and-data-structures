@@ -15,3 +15,8 @@ The LinkedList class should support methods to:
 
 ### Challenge Linked List Implementation
 ![Linked List Implementation](./LinkedList.png)
+
+
+### Challenge Linked List Remove Duplicates
+[Remove Duplicates](./LinkedList/LinkedList/Remove_Duplicat/README.md)
+
