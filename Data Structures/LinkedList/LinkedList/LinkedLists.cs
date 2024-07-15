@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace LinkedList
 {
-    public class LinkedList
+    public class LinkedLists
     {
         public Node head;
         public Node tail;
         public int count;
-        public LinkedList()
+        public LinkedLists()
         {
             head = null;
             tail = null;
@@ -119,6 +119,25 @@ namespace LinkedList
             }
         }
 
+        public void RemoveDublicate()
+        {
+            if (head == null) return;
+            Node current = head;
+            while (current.next != null)
+            {
+                if (current.data == current.next.data)
+                {
+                    current.next = current.next.next;
+                    count--;
+                }
+                else
+                {
+                    current = current.next;
+                }
+
+            }
+
+        }
         public void print() 
         {
             Node node = head;   

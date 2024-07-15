@@ -10,7 +10,7 @@ namespace LinkedListTest
         public void Remove_NodeIsTail_NodeIsRemoved()
         {
             // Arrange
-            LinkedList.LinkedList linkedList = new LinkedList.LinkedList();
+            LinkedList.LinkedLists linkedList = new LinkedList.LinkedLists();
             linkedList.Add(1);
             linkedList.Add(2);
             linkedList.Add(3);
@@ -27,7 +27,7 @@ namespace LinkedListTest
         public void Print_ListContainsNodes_PrintsAllNodes()
         {
             // Arrange
-            LinkedList.LinkedList linkedList = new LinkedList.LinkedList();
+            LinkedList.LinkedLists linkedList = new LinkedList.LinkedLists();
             linkedList.Add(1);
             linkedList.Add(2);
             linkedList.Add(3);
