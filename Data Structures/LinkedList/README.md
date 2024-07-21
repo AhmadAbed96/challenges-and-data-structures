@@ -21,3 +21,8 @@ The LinkedList class should support methods to:
 
 [Remove Duplicates](./LinkedList/Remove_Duplicat/README.md)
 
+### Challenge Linked List Merge Sorted Lists
+
+![Remove Duplicates](./MergeSorted-LinkedLists.png)
+![Remove Duplicates](./result.png)
+
