@@ -3,7 +3,7 @@ Implement basic stack and queue data structures to understand their functionalit
 
 ##Whiteboard Images
 
-### Challenge Linked List Implementation
+### Challenge stack and queue
 ![Remove Duplicates](./stack&queue.png)
 
 ![](./Result.png)

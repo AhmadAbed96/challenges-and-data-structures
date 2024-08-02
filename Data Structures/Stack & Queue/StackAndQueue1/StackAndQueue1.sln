@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackAndQueue1", "StackAndQueue1\StackAndQueue1.csproj", "{C2FC408D-95FB-4275-8E3E-D9CF691DB391}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackAndQueue1", "StackAndQueue1\StackAndQueue1.csproj", "{C2FC408D-95FB-4275-8E3E-D9CF691DB391}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackAndQueueTest", "StackAndQueueTest\StackAndQueueTest.csproj", "{B9634AD1-1979-44B9-A93C-C8DC128AF6B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackAndQueueTest", "StackAndQueueTest\StackAndQueueTest.csproj", "{B9634AD1-1979-44B9-A93C-C8DC128AF6B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseStackTest", "ReverseStackTest\ReverseStackTest.csproj", "{92FEB627-0912-4F0E-B73E-0498C60A532A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B9634AD1-1979-44B9-A93C-C8DC128AF6B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9634AD1-1979-44B9-A93C-C8DC128AF6B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9634AD1-1979-44B9-A93C-C8DC128AF6B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92FEB627-0912-4F0E-B73E-0498C60A532A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92FEB627-0912-4F0E-B73E-0498C60A532A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92FEB627-0912-4F0E-B73E-0498C60A532A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92FEB627-0912-4F0E-B73E-0498C60A532A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
