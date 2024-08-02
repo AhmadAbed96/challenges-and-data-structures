@@ -1,5 +1,6 @@
 ﻿using StackAndQueue1._stack;
 using StackAndQueue1._Queue;
+using StackAndQueue1._stack.ReverseStackUsingQueue;
 
 namespace StackAndQueue1
 {
@@ -7,33 +8,30 @@ namespace StackAndQueue1
     {
         static void Main(string[] args)
         {
+            StackWithReverse theStack = new StackWithReverse();
+            theStack.Push(1);
+            theStack.Push(2);
+            theStack.Push(3);
+            theStack.Push(4);
+            Console.Write("\t\tThe Stack Items ==>\n");
+            theStack.Print();
 
-            Stack stack = new Stack();
-            Queue queue = new Queue();
-            
-            stack.Push(1);
-            stack.Push(2);
-            stack.Push(3);
-            stack.Push(4);
-            stack.Push(5);
-            Console.WriteLine(stack.Peek() == 5);
+            Console.WriteLine("\t\t\tThe Stack Items after reverse ==>\n ");
+            Console.WriteLine();
+            theStack.ReverseStack();
+            theStack.Print();
+            Console.WriteLine();
+            Console.Write("\t\tThe Stack Items ==>\n");
+            Console.WriteLine();    
+            theStack.Push(6);
+            theStack.Push(7);
+            theStack.Print();
+            Console.WriteLine("\t\t\tThe Stack Items after reverse ==>\n ");
+            Console.WriteLine();
+            theStack.ReverseStack();
+            theStack.Print();
 
-            stack.Pop();
-            Console.WriteLine(stack.Peek() == 4);
 
-            stack.Print();
-
-            Console.WriteLine("--------------------------------");
-
-            queue.Enqueue(1);
-            queue.Enqueue(2);
-            queue.Enqueue(3);
-
-            queue.Print();
-
-            queue.Dequeue();
-            Console.WriteLine("\n After dequeue \n");
-            queue.Print();
 
 
 
