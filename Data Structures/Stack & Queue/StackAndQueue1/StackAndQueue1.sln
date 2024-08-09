@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseStackTest", "Reverse
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Delete_Midle_Element", "Delete_Midle_Element", "{971BF787-0FCD-45EC-9819-5A32F66D3379}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delete-Midle_ElementTest", "Delete-Midle_ElementTest\Delete-Midle_ElementTest.csproj", "{8094597F-2A81-4750-BEDF-D799DF4066D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delete-Midle_ElementTest", "Delete-Midle_ElementTest\Delete-Midle_ElementTest.csproj", "{8094597F-2A81-4750-BEDF-D799DF4066D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MinStack", "MinStack", "{894DCF6A-A976-4AE7-BA45-DE4119FAABFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "minStackTest", "minStackTest\minStackTest.csproj", "{A0053576-B868-46F8-B423-A3E6989FD34A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +39,10 @@ Global
 		{8094597F-2A81-4750-BEDF-D799DF4066D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8094597F-2A81-4750-BEDF-D799DF4066D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8094597F-2A81-4750-BEDF-D799DF4066D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0053576-B868-46F8-B423-A3E6989FD34A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0053576-B868-46F8-B423-A3E6989FD34A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0053576-B868-46F8-B423-A3E6989FD34A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0053576-B868-46F8-B423-A3E6989FD34A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
