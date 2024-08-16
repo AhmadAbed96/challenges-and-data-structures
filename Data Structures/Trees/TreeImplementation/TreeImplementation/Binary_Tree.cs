@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace TreeImplementation
 {
-    public class Binary_Tree
+    public class Binary_Tree 
     {
+        public TNode Root { get; set; }
+
+        public Binary_Tree(int RootVal)
+        {
+            Root = new TNode(RootVal);
+        }
         private StringBuilder _output;
 
         public Binary_Tree(StringBuilder output = null)
@@ -55,6 +61,23 @@ namespace TreeImplementation
                 Console.Write(output);
                 Console.ResetColor();
             }
+        }
+        public void Mirror()
+        {
+            MirrorHelper(Root);
+        }
+
+        private void MirrorHelper(TNode node)
+        {
+            if (node == null)
+            {
+                return;
+            }
+            MirrorHelper(node.left);
+            MirrorHelper(node.Right);
+            TNode temp = node.left;
+            node.left = node.Right;
+            node.Right = temp;
         }
     }
 }
