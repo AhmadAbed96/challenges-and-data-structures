@@ -6,17 +6,10 @@ using System.Threading.Tasks;
 
 namespace TreeImplementation
 {
-    public class Binary_Tree 
+    public class Binary_Tree : Binary_Search_Tree
     {
-        public TNode Root { get; set; }
-
-        public Binary_Tree(int RootVal)
-        {
-            Root = new TNode(RootVal);
-        }
         private StringBuilder _output;
-
-        public Binary_Tree(StringBuilder output = null)
+        public Binary_Tree(int data, StringBuilder output = null) : base(data)
         {
             _output = output;
         }
@@ -78,6 +71,32 @@ namespace TreeImplementation
             TNode temp = node.left;
             node.left = node.Right;
             node.Right = temp;
+        }
+
+        public int? SecondMax(TNode node)
+        {
+            if (node == null) throw new Exception("the node is null");
+            int? max = null;
+            int? secondmax = null;
+            TraverseTree(node, ref max, ref secondmax);
+            if (secondmax == null)
+            {
+                throw new InvalidOperationException("Not Fount");
+            }
+            return secondmax;
+        }
+        public void TraverseTree(TNode node, ref int? max, ref int? secondmax)
+        {
+            if (node == null) return;
+
+            TraverseTree(node.left, ref max, ref secondmax);
+            if (max == null || node.Value > max)
+            {
+                secondmax = max;
+                max = node.Value;
+            }
+
+            TraverseTree(node.Right, ref max, ref secondmax);
         }
     }
 }

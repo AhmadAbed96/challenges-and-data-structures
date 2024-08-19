@@ -32,18 +32,36 @@ namespace TreeImplementation
 
             Binary_Tree Btree = new Binary_Tree(4);
 
+            //Btree.Root.left = new TNode(8);
+            //Btree.Root.Right = new TNode(7);
+            //Btree.Root.left.left = new TNode(12);
+            //Btree.Root.left.Right = new TNode(9);
+            //Console.WriteLine("InOrder - Treversal");
+            //Btree.In_Order(Btree.Root);
+            //Btree.Mirror();
+            //Console.WriteLine();
+            //Console.WriteLine("Arter Using Mirror method");
+
+            //Console.WriteLine();
+            //Btree.In_Order(Btree.Root);
+
             Btree.Root.left = new TNode(8);
             Btree.Root.Right = new TNode(7);
             Btree.Root.left.left = new TNode(12);
             Btree.Root.left.Right = new TNode(9);
-            Console.WriteLine("InOrder - Treversal");
-            Btree.In_Order(Btree.Root);
-            Btree.Mirror();
-            Console.WriteLine();
-            Console.WriteLine("Arter Using Mirror method");
+            Btree.Root.left.Right = new TNode(10);
+            Btree.Root.left.Right = new TNode(13);
+            Btree.Add(11);
+            Btree.Add(14);
+            Btree.Add(17);
+            Btree.Add(19);
 
+            Console.WriteLine("InOrder - Treversal");
+            Btree.Pre_Order(Btree.Root);
             Console.WriteLine();
-            Btree.In_Order(Btree.Root);
+            Console.WriteLine("The Second Max Vaalue is");
+            Console.WriteLine();
+            Console.WriteLine(Btree.SecondMax(Btree.Root));
 
 
 
