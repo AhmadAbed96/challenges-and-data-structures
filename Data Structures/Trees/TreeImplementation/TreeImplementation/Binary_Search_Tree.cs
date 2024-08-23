@@ -108,5 +108,29 @@ namespace TreeImplementation
             }
             return node;
         }
+
+        public int LeafSum()
+        {
+            if (Root == null) return 0;
+            return LeafSumHelper(Root);
+
+
+        }
+        private int LeafSumHelper(TNode node)
+        {
+            if (node == null)
+            {
+                return 0;
+            }
+
+
+            if (node.left == null && node.Right == null)
+            {
+                return node.Value;
+            }
+
+
+            return LeafSumHelper(node.left) + LeafSumHelper(node.Right);
+        }
     }
 }
