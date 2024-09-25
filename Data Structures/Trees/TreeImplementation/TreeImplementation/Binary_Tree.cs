@@ -85,6 +85,37 @@ namespace TreeImplementation
             }
             return secondmax;
         }
+
+        public List<int> LargestValueEachLevel()
+        {
+            List<int> largestValues = new List<int>();
+            if (Root == null) return largestValues;
+
+            Queue<TNode> queue = new Queue<TNode>();
+            queue.Enqueue(Root);
+
+            while (queue.Count > 0)
+            {
+                int levelSize = queue.Count;
+                int maxAtLevel = int.MinValue;
+
+                for (int i = 0; i < levelSize; i++)
+                {
+                    var currentNode = queue.Dequeue();
+                    if (currentNode.Value > maxAtLevel)
+                    {
+                        maxAtLevel = currentNode.Value;
+                    }
+
+                    if (currentNode.left != null) queue.Enqueue(currentNode.left);
+                    if (currentNode.Right != null) queue.Enqueue(currentNode.Right);
+                }
+
+                largestValues.Add(maxAtLevel);
+            }
+
+            return largestValues;
+        }
         public void TraverseTree(TNode node, ref int? max, ref int? secondmax)
         {
             if (node == null) return;

@@ -138,24 +138,55 @@ namespace LinkedList
             }
 
         }
-        public void print()
+
+        public void RotateByK(int k)
         {
-            Node node = head;
-            while (node != null)
+            if (head == null || k == 0) return;
+
+            Node? current = head;
+            int count = 1;
+            while (count < k && current != null)
             {
-                if (node != tail)
-                {
-                    Console.Write($"{node.data} --> ");
-
-                }
-                else
-                    Console.Write(node.data);
-                node = node.next;
-
+                current = current.next;
+                count++;
             }
+            if (current == null) return;
+
+            Node? kthNode = current;
+            while (current.next != null)
+            {
+                current = current.next;
+            }
+            current.next = head;
+            head = kthNode.next;
+            kthNode.next = null;
+        }
+        public void PrintList()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("\t\tHead ----> null");
+                return;
+            }
+
+            Console.Write("\t\tHead ----> ");
+            Node current = head;
+
+            while (current != null)
+            {
+
+                Console.Write(current.data);
+
+                if (current.next != null)
+                    Console.Write(" --> ");
+
+                current = current.next;
+            }
+
+            Console.WriteLine(" --> null");
         }
 
-            public void MergeSortedLists(LinkedLists linkedlist)
+        public void MergeSortedLists(LinkedLists linkedlist)
             {
                 count = 0;
                 if (linkedlist == null && head == null) return;
