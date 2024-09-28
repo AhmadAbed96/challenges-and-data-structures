@@ -1,15 +1,14 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TreeImplementation", "TreeImplementation\TreeImplementation.csproj", "{1E17985E-1DD8-4B5E-9C79-36E3DA3EB63B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecondMaxValueTest", "SecondMaxValueTest\SecondMaxValueTest.csproj", "{9B2FAE78-A096-466F-B6C4-3EBCEE6F2553}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Largest-Level-ValueTest", "Largest-Level-ValueTest\Largest-Level-ValueTest.csproj", "{52E83D7C-03FC-4129-9756-AEC4381B546E}"
-EndProject
+
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Right_TreeTest", "Right_TreeTest\Right_TreeTest.csproj", "{497A466F-BF1A-4BFD-961D-B7852C254D11}"
+
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeImplementationTest", "TreeImplementationTest\TreeImplementationTest.csproj", "{6D83C8E9-7C3F-401F-B0C4-BC98175F225F}"
+
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
