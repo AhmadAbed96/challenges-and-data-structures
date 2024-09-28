@@ -129,5 +129,24 @@ namespace TreeImplementation
 
             TraverseTree(node.Right, ref max, ref secondmax);
         }
+
+        public void PrintRightView()
+        {
+            List<int> rightViewNodes = new List<int>();
+            RightViewHelper(Root, 0, rightViewNodes);
+
+            Console.WriteLine(string.Join(" ", rightViewNodes));
+        }
+
+        private void RightViewHelper(TNode node, int level,
+            List<int> rightViewNodes)
+        {
+            if (node == null)
+                return;
+            if (level == rightViewNodes.Count)
+                rightViewNodes.Add(node.Value);
+            RightViewHelper(node.Right, level + 1, rightViewNodes);
+            RightViewHelper(node.left, level + 1, rightViewNodes);
+        }
     }
 }
